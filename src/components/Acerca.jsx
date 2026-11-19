@@ -1,4 +1,4 @@
-function acerca() {
+function Acerca() {
   return (
     <section className="page">
       <h1>Acerca de</h1>
@@ -20,4 +20,4 @@ function acerca() {
   )
 }
 
-export default acerca
+export default Acerca

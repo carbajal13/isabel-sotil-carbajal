@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './Pokemons.css'
+import './Pokemons.jsx'
 
 const API_URL = 'https://pokeapi.co/api/v2/pokemon?limit=20'
 
@@ -32,7 +32,7 @@ function Pokemons() {
           const id = extractId(pokemon.url)
           return {
             id,
-            name: pokémon.nombre,
+            name: pokemon.name,
             image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`,
           }
         })
@@ -54,7 +54,7 @@ function Pokemons() {
 
   return (
     <section className="page">
-      <h1>Pokémons</h1>
+      <h1>Pokemons</h1>
       <p>
         Datos obtenidos en tiempo real desde{' '}
         <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">
@@ -63,12 +63,12 @@ function Pokemons() {
         (API externa, pública y gratuita).
       </p>
 
-      {loading && <p>Cargando pokémons...</p>}
+      {loading && <p>Cargando pokemons...</p>}
       {error && <p className="error">Ocurrió un error: {error}</p>}
 
       {!loading && !error && (
         <div className="cards-grid">
-          {pokemons.map((pokémon) => (
+          {pokemons.map((pokemon) => (
             <article key={pokemon.id} className="card">
               <img src={pokemon.image} alt={pokemon.name} loading="lazy" />
               <h3>#{pokemon.id}</h3>

@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom'
 
 
-function navbar() {
-  const linkClass = ({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')
+function Navbar() {
+  const linkClass = ({ isActive }) => (isActive ? 'Navbar-link active' : 'Navbar-link')
 
   return (
     <nav className="navbar">
-      <span className="navbar-brand">Practica3B</span>
-      <div className="navbar-links">
+      <span className="Navbar-brand">Practica3B</span>
+      <div className="Navbar-links">
         <NavLink to="/" end className={linkClass}>
           Inicio
         </NavLink>
@@ -15,11 +15,11 @@ function navbar() {
           Acerca de
         </NavLink>
         <NavLink to="/pokemons" className={linkClass}>
-          Pokémons
+          Pokemons
         </NavLink>
       </div>
     </nav>
   )
 }
 
-export default navbar
+export default Navbar

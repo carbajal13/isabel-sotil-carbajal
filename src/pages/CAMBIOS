@@ -1,0 +1,37 @@
+/** El primer cambio que hare sera en Pokemons.jsx en la linea 35 se usa  name: pokémon.nombre,en 
+realidad seria name: pokémon.name, ya que el nombre del  pokémon se encuentra en la propiedad 
+name y no en nombre.
+
+ /** Segundo cambio es en App.jsx, en la linea 4 se importa Acerca desde la carpeta pages, pero en realidad
+ el componente Acerca se encuentra en la carpeta 
+ components, por lo que se debe cambiar la ruta de importación a './components/Acerca.jsx'
+  para que funcione correctamente.
+
+/** Tercer cambio es en pokemons.jsx, en la linea 68 se usa pokémon en lugar de pokemon, lo cual es incorrecto ya que
+    el nombre de la variable es pokemon, por lo que se debe cambiar a pokemon para que funcione correctamente.
+
+/** Cuarto cambio es Navbar.jsx, en la linea 5 se cambia la clase de los enlaces de navegación de 'nav-link' a 'Navbar-link' para que
+ coincida con el estilo definido en el archivo CSS correspondiente, tambien en la linea 4 estaba escrito navbar en minuscula, lo
+  cual es incorrecto ya que los componentes de React 
+ deben comenzar con mayuscula, por lo que se debe cambiar a Navbar para que funcione correctamente. 
+ Tambien en la linea 7 se cambia la clase de la marca de navegación de 'navbar-brand' a 'Navbar-brand' 
+ para que coincida con el estilo definido en el archivo CSS correspondiente.
+
+ /** Quinto cambio es en Navbar.jsx, en la linea 15 se cambia el texto del enlace de navegación de 'Pokémons'
+ a 'Pokemons' para que coincida con el nombre del componente y evitar errores de importación. Tambien en la
+linea 22 se cambia la exportacion de navbar a Navbar para que coincida con el nombre del componente y evitar
+ errores de importación. Tambien en la linea 6 se cambia la clase de los enlaces de navegación de 'nav-link'
+ a 'Navbar-link' para que coincida con el estilo definido en el archivo CSS correspondiente.
+
+/** Sexto cambio es en Acerca.jsx, en la linea 4, 23 y 1 estaba escrito acerca en minuscula,
+ lo cual es incorrecto ya que los componentes de React deben comenzar con mayuscula, por lo que 
+se debe cambiar a Acerca para que funcione correctamente.
+
+
+/**Septimo en la linea 2 en pokemons.jsx se importa el archivo css de pokemons, pero en 
+realidad el archivo se debe importar con la extension .jsx y no .css, por lo que se 
+debe cambiar a './Pokemons.jsx' para que funcione correctamente.
+
+/** Tambien como extras en el mismo archivo pokemons se ve constante el uso de la palabra pokémon, 
+lo cual es incorrecto ya que el nombre de la variable es pokemon, por lo que se debe cambiar a
+ pokemon para que funcione correctamente.

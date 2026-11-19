@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home.jsx'
-import Acerca from './pages/Acerca.jsx'
+import Acerca from './components/Acerca.jsx'
 import Pokemons from './pages/Pokemons.jsx'
 import NotFound from './pages/NotFound.jsx'
 import './App.css'
